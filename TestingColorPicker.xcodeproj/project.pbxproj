@@ -13,6 +13,8 @@
 		E9A4FDE02B093B980023D1DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A4FDDF2B093B980023D1DD /* Preview Assets.xcassets */; };
 		E9A4FDE92B093D0E0023D1DD /* WheelColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A4FDE82B093D0E0023D1DD /* WheelColorPickerView.swift */; };
 		E9A4FDEC2B093EBC0023D1DD /* ColorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A4FDEB2B093EBC0023D1DD /* ColorRow.swift */; };
+		E9A4FDEE2B0944640023D1DD /* GridColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A4FDED2B0944640023D1DD /* GridColorPicker.swift */; };
+		E9A4FDF12B09448E0023D1DD /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A4FDF02B09448E0023D1DD /* CustomColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		E9A4FDDF2B093B980023D1DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E9A4FDE82B093D0E0023D1DD /* WheelColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelColorPickerView.swift; sourceTree = "<group>"; };
 		E9A4FDEB2B093EBC0023D1DD /* ColorRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRow.swift; sourceTree = "<group>"; };
+		E9A4FDED2B0944640023D1DD /* GridColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridColorPicker.swift; sourceTree = "<group>"; };
+		E9A4FDF02B09448E0023D1DD /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 			isa = PBXGroup;
 			children = (
 				E9A4FDD82B093B960023D1DD /* TestingColorPickerApp.swift */,
+				E9A4FDEF2B09447F0023D1DD /* Models */,
 				E9A4FDEA2B093EAC0023D1DD /* Components */,
 				E9A4FDDA2B093B960023D1DD /* ContentView.swift */,
 				E9A4FDE82B093D0E0023D1DD /* WheelColorPickerView.swift */,
+				E9A4FDED2B0944640023D1DD /* GridColorPicker.swift */,
 				E9A4FDDC2B093B980023D1DD /* Assets.xcassets */,
 				E9A4FDDE2B093B980023D1DD /* Preview Content */,
 			);
@@ -79,6 +85,14 @@
 				E9A4FDEB2B093EBC0023D1DD /* ColorRow.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		E9A4FDEF2B09447F0023D1DD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E9A4FDF02B09448E0023D1DD /* CustomColor.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,8 +167,10 @@
 			files = (
 				E9A4FDDB2B093B960023D1DD /* ContentView.swift in Sources */,
 				E9A4FDD92B093B960023D1DD /* TestingColorPickerApp.swift in Sources */,
+				E9A4FDF12B09448E0023D1DD /* CustomColor.swift in Sources */,
 				E9A4FDE92B093D0E0023D1DD /* WheelColorPickerView.swift in Sources */,
 				E9A4FDEC2B093EBC0023D1DD /* ColorRow.swift in Sources */,
+				E9A4FDEE2B0944640023D1DD /* GridColorPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
