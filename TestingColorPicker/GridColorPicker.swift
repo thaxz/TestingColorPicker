@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct GridColorPicker: View {
+    @State private var selectedColor: CustomColor? = nil
+    let colorOptions = CustomColor.spectrum()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView([.horizontal, .vertical]){
+            LazyVGrid(columns: Array(repeating: GridItem(.fixed(21), spacing: 0), count: 22), spacing: 0) {
+                ForEach(colorOptions) { color in
+                    Color(hue: color.hue, saturation: color.saturation, brightness: color.brightness)
+                }
+            }
+        }
     }
 }
 
