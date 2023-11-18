@@ -28,7 +28,7 @@ struct CustomColor: Identifiable, Hashable {
             results.append(contentsOf: row)
             let rowEnd  = brightnessValues.map { CustomColor(hue: hueValue, saturation: $0, brightness: 1)
             }.reversed().dropFirst()
-            results.append(contentsOf: row)
+            results.append(contentsOf: rowEnd)
         }
         
         return results
