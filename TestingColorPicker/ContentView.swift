@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var color: Color = .red
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            
+            ColorPicker("Pick a color", selection: $color)
         }
         .padding()
     }
